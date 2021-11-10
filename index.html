@@ -8,41 +8,47 @@
     <!-- BOXICON -->
     <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
     <link rel="stylesheet" href="dist/css/style.min.css">
-    <title>Question and Answer</title>
+    <title>Frequently Asked Questions</title>
 </head>
 
 <body>
     <section class="question">
         <header class="question__header">
-            <h3 class="question__title">Common Questions</h3>
+            <h3 class="question__title">Frequently Asked Questions</h3>
             <div class="question__title-underline"></div>
         </header>
         <article class="question__article">
             <div class="question__container">
-                <button class="btn question__button">
-                    question goes here<i class='bx bx-plus question__icon'></i>
+                <button class="btn question__button" id="question-one" aria-haspopup="true" aria-controls="answer-one"
+                    aria-expanded="false">
+                    How do I make sure I order the right size?<i class='bx bx-plus question__icon'></i>
                 </button>
-                <div class="question__answer-container">
-                    <p class="question__answer">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat dignissimos
-                        in possimus dolore omnis quisquam porro maxime eius voluptatum consequuntur.</p>
+                <div class="question__answer-container" id="answer-one" role="region">
+                    <p class="question__answer" aria-labelledby="question-one" aria-live="polite">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis
+                        voluptatum reiciendis enim omnis magnam, suscipit soluta labore facilis reprehenderit possimus,
+                        quod rerum totam. In, itaque nulla explicabo praesentium facere fuga. Nobis in quas ab quisquam?
+                    </p>
                 </div>
             </div>
             <div class="question__container">
-                <button class="btn question__button">
-                    question goes here<i class='bx bx-plus question__icon'></i>
+                <button class="btn question__button" id="question-two" aria-haspopup="true" aria-controls="answer-two"
+                    aria-expanded="false">
+                    What is the return policy?<i class='bx bx-plus question__icon'></i>
                 </button>
-                <div class="question__answer-container">
-                    <p class="question__answer">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat dignissimos
+                <div class="question__answer-container" id="answer-two" role="region">
+                    <p class="question__answer" aria-labelledby="question-two" aria-live="polite">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat
+                        dignissimos
                         in possimus dolore omnis quisquam porro maxime eius voluptatum consequuntur.</p>
                 </div>
             </div>
+            
             <div class="question__container">
-                <button class="btn question__button">
-                    question goes here<i class='bx bx-plus question__icon'></i>
+                <button class="btn question__button" id="question-three" aria-haspopup="true" aria-controls="answer-three"
+                    aria-expanded="false">
+                    Can I make changes to an order I already placed?<i class='bx bx-plus question__icon'></i>
                 </button>
-                <div class="question__answer-container">
-                    <p class="question__answer">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat dignissimos
-                        in possimus dolore omnis quisquam porro maxime eius voluptatum consequuntur.</p>
+                <div class="question__answer-container" id="answer-three" role="region">
+                    <p class="question__answer" aria-labelledby="question-three" aria-live="polite">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil, nemo.</p>
                 </div>
             </div>
         </article>
