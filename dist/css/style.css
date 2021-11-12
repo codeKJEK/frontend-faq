@@ -11,6 +11,12 @@ body {
   font-family: Arial, Helvetica, sans-serif;
   color: #0d0d0d;
   background-color: #f2f2f2;
+  font-size: 16px;
+}
+
+.dark-mode {
+  color: #f2f2f2;
+  background-color: #0d0d0d;
 }
 
 .question {
@@ -24,12 +30,13 @@ body {
   padding: 0;
   text-align: left;
   cursor: pointer;
+  color: inherit;
 }
 .question__header {
   display: flex;
   flex-direction: column;
   align-items: center;
-  row-gap: 1rem;
+  row-gap: 0.25rem;
   margin-bottom: 3rem;
 }
 .question__title {
@@ -38,15 +45,21 @@ body {
   margin: 0;
   line-height: 2rem;
 }
+.question__instruction {
+  text-align: center;
+  font-size: 0.8em;
+  margin: 0;
+}
 .question__title-underline {
   height: 4px;
   width: 75px;
+  margin-top: 1.25rem;
   background-color: #808080;
 }
 .question__container {
   margin-bottom: 1.5rem;
   border-radius: 0.5rem;
-  background-color: #fff;
+  background-color: #ffffff;
   box-shadow: 0 5px 15px #bfbfbf;
 }
 .question__button.btn {
@@ -78,6 +91,11 @@ body {
 .question .visible {
   opacity: 1;
   transition: opacity 0.25s ease-in 0.5s;
+}
+
+.dark-mode .question__container {
+  background-color: #262626;
+  box-shadow: 0 5px 15px #000000;
 }
 
 @media screen and (min-width: 632px) {
